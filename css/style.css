@@ -166,8 +166,7 @@ button:focus {
   letter-spacing: -1px;
 }
 .wrap .portfolio {
-  padding-top: 120px;
-  height: 100vh;
+  padding-top: 100px;
 }
 .wrap .portfolio .text-box {
   width: 1400px;
