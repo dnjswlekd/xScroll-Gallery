@@ -1,0 +1,177 @@
+@charset "UTF-8";
+/* 구글폰트 */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital@1&family=Noto+Sans+KR&family=Public+Sans&display=swap");
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  font-size: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a img {
+  border: none;
+}
+
+li {
+  list-style: none;
+}
+
+address,
+em,
+i {
+  font-style: normal;
+}
+
+a:focus {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* 영어폰트 */
+.en {
+  font-family: "Noto Sans KR", sans-serif;
+  letter-spacing: -1px;
+}
+
+.en1 {
+  font-family: "Public Sans", sans-serif;
+}
+
+.en2 {
+  font-family: "Cormorant Infant", serif;
+  font-style: italic;
+}
+
+.wrap {
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #000;
+}
+.wrap .con01 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrap .con01 .text-box {
+  text-align: center;
+  text-transform: uppercase;
+  color: #ece0c7;
+}
+.wrap .con01 .text-box .logo {
+  display: block;
+  margin: 0 auto 25px;
+  width: 150px;
+}
+.wrap .con01 .text-box .logo img {
+  width: 100%;
+}
+.wrap .con01 .text-box .title {
+  font-size: 68px;
+  margin-bottom: 10px;
+  letter-spacing: -1px;
+  font-weight: bolder;
+}
+.wrap .con01 .text-box .desc {
+  font-size: 20px;
+  letter-spacing: -1px;
+}
+.wrap .con03 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrap .con03 h2 {
+  text-transform: uppercase;
+  font-size: 80px;
+}
