@@ -125,21 +125,22 @@ button:focus {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #0f0d0d;
+  color: #fbe094;
+  text-transform: uppercase;
 }
 
 .wrap {
   position: relative;
   margin: 0 auto;
   overflow: hidden;
-  background-color: #000;
+  background-color: #fed700;
 
   .con01 {
     @include content;
 
     .text-box {
       text-align: center;
-      text-transform: uppercase;
-      color: #ece0c7;
 
       .logo {
         display: block;
@@ -165,10 +166,93 @@ button:focus {
     }
   }
 
+  .portfolio {
+    padding-top: 120px;
+    height: 100vh;
+
+    .text-box {
+      width: 1400px;
+      margin: 0 auto;
+      text-transform: uppercase;
+      color: #0f0d0d;
+
+      h2 {
+        font-size: 72px;
+        letter-spacing: -5px;
+        margin-bottom: 5px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+    }
+
+    .list {
+      display: flex;
+      flex-wrap: nowrap;
+      padding: 6% 0;
+
+      li {
+        flex-shrink: 0;
+        width: 400px;
+        height: 520px;
+        padding: 0 30px;
+        cursor: pointer;
+
+        .box {
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          position: relative;
+
+          &::after {
+            opacity: 0;
+            content: '';
+            width: 100%;
+            height: 100%;
+            background: url('/img/ex_4/sticker.png') no-repeat center / 130px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: 0.5s;
+          }
+
+          img {
+            width: 100%;
+            transition: 0.5s;
+          }
+        }
+
+        &:hover {
+          .box {
+            &::after {
+              opacity: 0.5;
+            }
+
+            img {
+              transform: scale(0.98);
+              filter: brightness(60%);
+            }
+          }
+        }
+
+        &.a {
+          transform: rotate(-8deg);
+        }
+        &.b {
+          transform: rotate(4deg);
+        }
+        &.c {
+          transform: rotate(-5deg);
+        }
+      }
+    }
+  }
+
   .con03 {
     @include content;
     h2 {
-      text-transform: uppercase;
       font-size: 80px;
     }
   }

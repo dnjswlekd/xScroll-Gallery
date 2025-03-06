@@ -132,7 +132,7 @@ button:focus {
   position: relative;
   margin: 0 auto;
   overflow: hidden;
-  background-color: #000;
+  background-color: #fed700;
 }
 .wrap .con01 {
   width: 100%;
@@ -140,11 +140,12 @@ button:focus {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #0f0d0d;
+  color: #fbe094;
+  text-transform: uppercase;
 }
 .wrap .con01 .text-box {
   text-align: center;
-  text-transform: uppercase;
-  color: #ece0c7;
 }
 .wrap .con01 .text-box .logo {
   display: block;
@@ -164,14 +165,84 @@ button:focus {
   font-size: 20px;
   letter-spacing: -1px;
 }
+.wrap .portfolio {
+  padding-top: 120px;
+  height: 100vh;
+}
+.wrap .portfolio .text-box {
+  width: 1400px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  color: #0f0d0d;
+}
+.wrap .portfolio .text-box h2 {
+  font-size: 72px;
+  letter-spacing: -5px;
+  margin-bottom: 5px;
+}
+.wrap .portfolio .text-box p {
+  font-size: 18px;
+}
+.wrap .portfolio .list {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 6% 0;
+}
+.wrap .portfolio .list li {
+  flex-shrink: 0;
+  width: 400px;
+  height: 520px;
+  padding: 0 30px;
+  cursor: pointer;
+}
+.wrap .portfolio .list li .box {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.wrap .portfolio .list li .box::after {
+  opacity: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url("/img/ex_4/sticker.png") no-repeat center/130px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s;
+}
+.wrap .portfolio .list li .box img {
+  width: 100%;
+  transition: 0.5s;
+}
+.wrap .portfolio .list li:hover .box::after {
+  opacity: 0.5;
+}
+.wrap .portfolio .list li:hover .box img {
+  transform: scale(0.98);
+  filter: brightness(60%);
+}
+.wrap .portfolio .list li.a {
+  transform: rotate(-8deg);
+}
+.wrap .portfolio .list li.b {
+  transform: rotate(4deg);
+}
+.wrap .portfolio .list li.c {
+  transform: rotate(-5deg);
+}
 .wrap .con03 {
   width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #0f0d0d;
+  color: #fbe094;
+  text-transform: uppercase;
 }
 .wrap .con03 h2 {
-  text-transform: uppercase;
   font-size: 80px;
 }
